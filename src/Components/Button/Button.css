@@ -1,0 +1,47 @@
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.--btn-background{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.--btn-transparent{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    transition: ease .5s;
+}
+
+.--btn-transparent:hover{
+    transition: ease .5s;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.--btn-padding{
+    padding: 11px;
+    max-width: 190px;
+    min-width: 23px;
+    width: 150px;
+}
+
+
+.--btn-radius{
+    border-radius: 6px;
+}
+
+
+
+
+
+
+@media screen and (max-width:670px) {
+    .--btn-padding{
+        width: 110px;
+    }
+}
