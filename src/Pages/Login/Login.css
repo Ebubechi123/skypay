@@ -59,6 +59,7 @@
 @media screen and (max-width:670px) {
     .login-container{
         flex-wrap: wrap;
+        margin-top:56px;
     }
     .col-1{
         width: 100%;
@@ -79,5 +80,10 @@
     }
     .col-img img{
         width: 74vw;
+    }
+
+
+    .form label{
+        font-size: .7rem;
     }
 }
