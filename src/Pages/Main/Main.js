@@ -1,12 +1,9 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route} from "react-router-dom";
 import PaymentPage from "../PaymentPage/PaymentPage";
 import Home from "../Home/Home";
 import Account from "../Account/Account";
-import Navigation, {
-  BottomNav,
-  TopNav,
-} from "../../Components/Navigation/Navigation";
+import Navigation from "../../Components/Navigation/Navigation";
 
 const Main = () => {
   return (
