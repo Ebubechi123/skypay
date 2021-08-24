@@ -30,7 +30,7 @@ const Login = () => {
             <Input required type="text" placeholder={"Reg No"} />
 
             <Link to="/Home">
-              <Button className="--btn-transparent --btn-radius --btn-padding"></Button>
+              <Button className="--btn-transparent --btn-radius --btn-padding">Login</Button>
             </Link>
             <p>
               Don't have an account?{" "}
