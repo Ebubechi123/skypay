@@ -1,19 +1,20 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import Account from '../Pages/Account/Account';
-import Home from '../Pages/Home/Home';
-import Login from '../Pages/Login/Login';
-import PaymentPage from '../Pages/PaymentPage/PaymentPage';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Register from "../Pages/Register/Register";
+import Login from "../Pages/Login/Login";
+import Main from "../Pages/Main/Main";
+import Navigation from "../Components/Navigation/Navigation";
 
 const Routes = () => {
-    return ( <>
-            <Route exact={true} path="/" component={Login} />
-            <Route exact={true} path="/Home" component={Home} />
-            <Route exact={true} path="/PaymentPage" component={PaymentPage} />
-            <Route exact={true} path="/Account" component={Account} />
-            </> 
-            
-    );
-}
- 
+  return (
+    <>
+      <Switch>
+        <Route exact={true} path="/" component={Register} />
+        <Route exact={true} path="/login" component={Login} />
+        <Route component={Main} />
+      </Switch>
+    </>
+  );
+};
+
 export default Routes;

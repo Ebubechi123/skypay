@@ -1,14 +1,14 @@
 import React from 'react';
 import "./Login.css"
-import Image from "../../Assets/Images/undraw_exploring_1l7f.svg"
+import { Link } from "react-router-dom"
+import Image from "../../Assets/Images/undraw_completing_6bhr.svg"
 import Title from '../../Components/Title/Title';
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
-
 const Login = () => {
     return ( 
         <>
-        <div className="login-container">
+<div className="Login-container">
             <div className="col-1">
                 <div className="col-img">
                     <img src={Image} alt="login img" />
@@ -18,20 +18,16 @@ const Login = () => {
                 <form onSubmit={(e)=>{
                     e.preventDefault();
                 }} className="form">
-                    <Title>Sign Up</Title>
+                    <Title>Login</Title>
 
                     <label>Name :</label>
                     <Input required type="text" placeholder={"Full name"} />
 
-                    <label>E-mail :</label>
-                    <Input required type="email"placeholder={"Your E-mail"} />
-
                     <label>Registration Number :</label>
                     <Input required type="text" placeholder={"Reg No"} />
 
-                    <Button className="--btn-transparent --btn-radius --btn-padding">Sign Up</Button>
-
-                        <p>Already have an account?  <span>Login</span></p>
+                    <Button className="--btn-transparent --btn-radius --btn-padding">Login</Button>
+                    <p>Don't have an account?  <Link to="/"><span>Sign up</span></Link></p>
                 </form>
             </div>
         </div>
