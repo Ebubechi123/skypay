@@ -31,7 +31,7 @@ const Register = () => {
             <Input required type="email" placeholder={"Your E-mail"} />
 
             <label>Registration Number :</label>
-            <Input required type="text" placeholder={"Reg No"} />
+            <Input required={true} type="text" placeholder={"Reg No"} />
 
             <Link to="/Home">
               {" "}

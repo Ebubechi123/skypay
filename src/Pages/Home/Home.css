@@ -1,64 +1,122 @@
-
-
-header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+header {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-.welcome-msg{
-    margin-top: 34px;
-    margin-left: 193px;
+.welcome-msg {
+  margin-top: 34px;
+  margin-left: 193px;
 }
 
-.welcome-msg h4{
-    font-size: 2.8rem;
+.welcome-msg h4 {
+  font-size: 2.8rem;
 }
 
-.display-card{
-    margin-top: 78px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.display-card {
+  margin-top: 78px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.card{
-    border-radius: 14px;
-    flex-basis: 30%;
-    height: 195px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: honeydew;
-}
-
-
-.blue{
-    background: rgb(175, 5, 152);;
+.card {
+  border-radius: 14px;
+  flex-basis: 30%;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: honeydew;
 }
 
-.green{
-    background: #087697;
+.blue {
+  background: rgb(175, 5, 152);
 }
 
-.welcome-msg span{
-    font-size: 1.5rem;
-    color: rgb(243 192 6);
+.green {
+  background: #087697;
 }
 
-@media screen and (max-width:670px) {
-    .welcome-msg{
-        margin-left: 53px;
-    }
-    .welcome-msg h4{
-      font-size:   2.2rem;
-    }
+.welcome-msg span {
+  font-size: 1.5rem;
+  color: rgb(243 192 6);
+}
 
-    .card{
-        height: 129px;
-        flex-basis: 45%;
-        font-size: .68rem;
-    }
+.transaction-history {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.transaction-title h2 {
+  font-size: 1.2rem;
+}
+
+.transaction-card {
+  margin: 50px auto;
+  max-width: 530px;
+  width: 510px;
+  padding: 8px;
+  background-color: rgb(255 255 255);
+  box-shadow: 0px 0px 8px rgb(232 232 232);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.transaction-icon span {
+  padding: 9px;
+  border-radius: 50%;
+  font-size: small;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.transaction-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info p {
+  padding: 6px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  font-size: small;
+}
+
+@media screen and (max-width: 670px) {
+  .welcome-msg {
+    margin-left: 53px;
+  }
+  .welcome-msg h4 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    height: 129px;
+    flex-basis: 45%;
+    font-size: 0.68rem;
+  }
+  .transaction-history {
+    margin: 60px auto;
+    max-width: 330px;
+    width: 310px;
+  }
+  .transaction-card {
+    width: -webkit-fill-available;
+  }
 }

@@ -7,10 +7,12 @@ import {
   faUser,
   faArrowLeft,
   faCreditCard,
-  faHandPeace
+  faHandPeace,
+  faInfoCircle,
+  faGem
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faBars, faHome, faUser, faArrowLeft, faCreditCard,faHandPeace);
+library.add(faBars, faHome, faUser, faArrowLeft, faCreditCard,faHandPeace,faInfoCircle,faGem);
 
 export const MenuBar = () => {
   return <FontAwesomeIcon icon="bars" />;
@@ -31,4 +33,10 @@ export const CreditCard = () => {
 };
 export const Hand = () => {
   return <FontAwesomeIcon icon="hand-peace" />;
+};
+export const Info = () => {
+  return <FontAwesomeIcon icon="info-circle" />;
+};
+export const Cash = () => {
+  return <FontAwesomeIcon icon="gem" />;
 };

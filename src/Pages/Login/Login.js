@@ -23,8 +23,8 @@ const Login = () => {
           >
             <Title>Login</Title>
 
-            <label>Name :</label>
-            <Input required type="text" placeholder={"Full name"} />
+            <label>E-mail :</label>
+            <Input required type="email" placeholder={"Your E-mail"} />
 
             <label>Registration Number :</label>
             <Input required type="text" placeholder={"Reg No"} />
